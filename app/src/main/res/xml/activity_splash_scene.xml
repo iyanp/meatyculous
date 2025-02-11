@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:app="urn:oasis:names:tc:xliff:document:1.2">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000"
+        motion:transitionFlags="none">
+        <KeyFrameSet>
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/logo"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="125dp"
+            android:layout_height="107dp"
+            android:visibility="visible"
+            app:scaleY="1"
+            app:scaleX="1"
+            motion:layout_constraintBottom_toTopOf="@+id/welcome"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/text1"
+            motion:layout_constraintEnd_toEndOf="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:scaleY="1"
+            app:scaleX="1"
+            android:fontFamily="@font/sailors"
+            motion:layout_constraintBottom_toTopOf="@+id/text2"
+            motion:layout_constraintTop_toBottomOf="@+id/welcome"
+            motion:layout_constraintStart_toStartOf="@+id/welcome" />
+        <Constraint
+            android:id="@+id/text2"
+            motion:layout_constraintEnd_toEndOf="@+id/text1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:scaleY="1"
+            app:scaleX="1"
+            android:fontFamily="@font/tradegothic"
+            motion:layout_constraintBottom_toTopOf="@+id/startScan"
+            motion:layout_constraintTop_toBottomOf="@+id/text1"
+            motion:layout_constraintStart_toStartOf="@+id/text1" />
+        <Constraint
+            android:id="@+id/startScan"
+            motion:layout_constraintEnd_toEndOf="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"
+            app:scaleY="1"
+            app:scaleX="1"
+            android:fontFamily="@font/codecprobold"
+            motion:layout_constraintTop_toBottomOf="@+id/text2"
+            motion:layout_constraintStart_toStartOf="@+id/text2" />
+    </ConstraintSet>
+</MotionScene>

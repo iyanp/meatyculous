@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Manual">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingTop="5dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/userManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="User Manual"
+            android:textColor="#CE5F7D"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/titleContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:text="Welcome to Meatyculous! This user manual will guide you through the steps to use our Android application to classify the quality of pork meat based on its color. Follow these instructions to ensure you get the best results from the app"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/avenirmed"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintEnd_toEndOf="@+id/userManual"
+            app:layout_constraintStart_toStartOf="@id/userManual"
+            app:layout_constraintTop_toBottomOf="@id/userManual" />
+
+
+        <TextView
+            android:id="@+id/installation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:padding="10dp"
+            android:text="Installation"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleContent" />
+
+        <TextView
+            android:id="@+id/oneIns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="1. Download the App:"
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/installation" />
+
+        <LinearLayout
+            android:id="@+id/bulletone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oneIns">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirmed"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="5dp"
+                android:text="• Download the APK of the Meatyculous application."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirmed"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="5dp"
+                android:text='• Tap “Install” to download and install the app on your device.'
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gettingStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Getting Started"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bulletone" />
+
+        <TextView
+            android:id="@+id/oneGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="1. Open the App:"
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gettingStarted" />
+
+
+        <LinearLayout
+            android:id="@+id/bullettwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oneGet">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Find the Meatyculous icon on your home screen or app drawer."
+                android:fontFamily="@font/avenirmed"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text='• Tap the icon to open the app."'
+                android:fontFamily="@font/avenirmed"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/twoGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="2. Permissions:"
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bullettwo" />
+
+        <LinearLayout
+            android:id="@+id/permissionLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/twoGet">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The app will request permission to access your camera and storage. This is necessary for capturing and saving images. Allow these permissions to enable full functionality."
+                android:paddingLeft="16dp"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/avenirmed"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/permissionPhoto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/permissionphoto"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/permissionLayout" />
+
+        <TextView
+        android:id="@+id/usingtheapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Using the App Meatyculous"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#CE5F7D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/permissionPhoto" />
+
+        <TextView
+            android:id="@+id/mainScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Main Screen"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usingtheapp" />
+
+        <TextView
+            android:id="@+id/mainscreenone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="When you open Meatyculous, you will see the main screen with the following options:"
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainScreen"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/mainscreenlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainscreenone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="1.	Camera: Use this to take a picture of the pork meat and to analyze the captured images for meat quality classification."
+                android:fontFamily="@font/avenirmed"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text='2.	Gallery: Select an existing photo of pork meat from your photo library'
+                android:fontFamily="@font/avenirmed"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text='3.	Information: Learn more about pork meat quality conditions indicators and the science behind the app'
+                android:fontFamily="@font/avenirmed"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text='4.	User Manual: Access this instructional manual directly within the app for guidance'
+                android:fontFamily="@font/avenirmed"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/navbarPic"
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:src="@drawable/navbarmainpg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainscreenlist" />
+
+        <TextView
+            android:id="@+id/capturingPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Capturing Photo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/navbarPic" />
+
+        <TextView
+            android:id="@+id/oneCapture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirmed"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:text='1.	Launch the Camera: On the main screen, tap the "Capture Photo" button. This will open your camera.'
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/capturingPhoto"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/camera_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/scan_button"
+            app:layout_constraintTop_toBottomOf="@+id/oneCapture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/oneCaptureA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text='2.	Upload Photo: Tap the Gallery icon, you will see a preview of the photos you want to upload then pick one photo then crop it and upload it for analysis.'
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/camera_icon"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <FrameLayout
+            android:id="@+id/screenShotFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/oneCaptureA">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cropRight"
+                    android:layout_width="120dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/cropright"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cropWrong"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/cropWrong"
+                    android:layout_width="120dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/cropwrong"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cropRight"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/correct"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/cropRight"
+                    app:layout_constraintStart_toStartOf="@+id/cropRight"
+                    app:layout_constraintEnd_toEndOf="@+id/cropRight"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/wrong"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/cropWrong"
+                    app:layout_constraintStart_toStartOf="@+id/cropWrong"
+                    app:layout_constraintEnd_toEndOf="@+id/cropWrong"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/oneCaptureB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text='3.	Take a Photo: Position the pork meat within the camera frame and ensure good lighting. Press the shutter button to take a clear photo. Make sure that the pork meat fills the pointer of the camera.'
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/screenShotFrame"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <FrameLayout
+            android:id="@+id/cameraShotFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/oneCaptureB">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/shotRight"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/rightcapture"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/shotWrong"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/shotWrong"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/wrongcapture"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/shotRight"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/correct"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/shotRight"
+                    app:layout_constraintStart_toStartOf="@+id/shotRight"
+                    app:layout_constraintEnd_toEndOf="@+id/shotRight"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/wrong"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/shotWrong"
+                    app:layout_constraintStart_toStartOf="@+id/shotWrong"
+                    app:layout_constraintEnd_toEndOf="@+id/shotWrong"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/captureLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cameraShotFrame">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text='●	TAKE NOTE!'
+                android:fontFamily="@font/avenirheavy"
+                android:textColor="#FF0000"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text='1.	Ensure the pork meat is centered in the frame.'
+                    android:fontFamily="@font/avenirmed"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:lineSpacingMultiplier="1.2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text='2.	Avoid shadows and ensure the meat is evenly lit.'
+                    android:fontFamily="@font/avenirmed"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:lineSpacingMultiplier="1.2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text='3.	Hold your camera steady to avoid blurry images.'
+                    android:fontFamily="@font/avenirmed"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:lineSpacingMultiplier="1.2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text='4.	Do not capture photo covered in shadow.'
+                    android:fontFamily="@font/avenirmed"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:lineSpacingMultiplier="1.2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text='5. Avoid taking pictures of pork meat illuminated by yellow light such as directed to yellow Fluorescent bulb, for it may affect the accuracy of the results'
+                    android:fontFamily="@font/avenirmed"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:lineSpacingMultiplier="1.2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text='6. Avoid taking pictures of pork meat expose from to much light.'
+                    android:fontFamily="@font/avenirmed"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:lineSpacingMultiplier="1.2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--ADD ON PHOTO-->
+
+        <FrameLayout
+            android:id="@+id/cameraShotFrame2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/captureLayout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/shotRight1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/blurred"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/shotWrong1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/shotWrong1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/shadowed"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/shotRight1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/wrong"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/shotRight1"
+                    app:layout_constraintStart_toStartOf="@+id/shotRight1"
+                    app:layout_constraintEnd_toEndOf="@+id/shotRight1"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/wrong"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/shotWrong1"
+                    app:layout_constraintStart_toStartOf="@+id/shotWrong1"
+                    app:layout_constraintEnd_toEndOf="@+id/shotWrong1"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+
+        <!--end-->
+
+        <TextView
+            android:id="@+id/analyzing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Analyzing the Meat"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cameraShotFrame2" />
+
+        <TextView
+            android:id="@+id/analyzeOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text='1.	Start Analysis: The app will process the image to segment the color and apply the color threshold algorithm to determine meat quality. This may take a few seconds.'
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/analyzing"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+        android:id="@+id/viewing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Viewing Result"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/analyzeOne" />
+
+        <TextView
+            android:id="@+id/viewingOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text='1.	Results Screen: Once the analysis is complete, you will be directed to the results screen.'
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewing"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/viewingTwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text='2.	Quality Indicator: The quality of the pork meat will be displayed as "PSE" "RFN" and “DFD"'
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewingOne"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewingTwo">
+
+            <FrameLayout
+                android:id="@+id/pse"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/framebg"
+                android:onClick="popUpPse"
+                app:layout_constraintBottom_toTopOf="@id/rfn"
+                app:layout_constraintEnd_toEndOf="@+id/rfn"
+                app:layout_constraintStart_toStartOf="@+id/rfn"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:id="@+id/pseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirlight"
+                        android:text="Pale, Soft, and Exudative (PSE)"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/rfn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/framebg"
+                android:onClick="popUpRfn"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:layout_constraintBottom_toTopOf="@id/dfd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pse">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/rfnText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirlight"
+                        android:text="Red, firm, and non-exudative (RFN)"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/dfd"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/framebg"
+                android:onClick="popUpDfd"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/rfn"
+                app:layout_constraintStart_toStartOf="@+id/rfn"
+                app:layout_constraintTop_toBottomOf="@+id/rfn">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/dfdText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirlight"
+                        android:text="Dark, firm, and dry (DFD)"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </FrameLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/viewingThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text='3.	Details: Additional details about the analysis and suggestions for meat quality management will also be provided.'
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quality"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/troubleshoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Troubleshooting"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewingThree" />
+
+        <TextView
+            android:id="@+id/troubleshootone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text='1.	Blurry Photos: Ensure the camera is steady and there is sufficient lighting when taking a photo.'
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/troubleshoot"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/troubleshoottwo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirmed"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:text='2.	Analysis Errors: If the app cannot analyze the photo, try retaking it with better lighting and ensuring the meat is in the center of the frame.'
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/troubleshootone"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/troubleshootthree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text='3.	App Crashes: Restart the app and try again. If the problem persists, check for updates or reinstall the app.'
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/troubleshoottwo"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Support"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/troubleshootthree" />
+
+        <TextView
+            android:id="@+id/supportone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text='If you encounter any issues or have questions about Meatyculous, please contact our support team:'
+            android:fontFamily="@font/avenirmed"
+            android:textColor="@color/black"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/support"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/emailIc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/email"
+            app:layout_constraintBottom_toBottomOf="@id/textView7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/supportone" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirmed"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:text='estrellacatherine07@gmail.com , pmmatimat2021@gmail.com , moisespearlyn@gmail.com'
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/emailIc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/emailIc"
+            app:layout_constraintTop_toBottomOf="@id/supportone" />
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/phone"
+            app:layout_constraintBottom_toBottomOf="@+id/textView10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirmed"
+            android:text=' 09305232404 , 09628190496 , 09602654686'
+            android:textColor="@color/black"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/phone"
+            app:layout_constraintTop_toBottomOf="@id/textView7" />
+
+        <TextView
+            android:id="@+id/lastText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenirmed"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="10dp"
+            android:text='Thank you for using Meatyculous! We hope this app helps you ensure the quality of your pork meat.'
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+        <FrameLayout
+            android:id="@+id/tutorialModeManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lastText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tutorial Mode"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="#CE5F7D"/>
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

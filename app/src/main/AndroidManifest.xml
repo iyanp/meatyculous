@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Capstone"
+        tools:targetApi="31">
+        <activity
+            android:name=".Reminders"
+            android:exported="false" />
+        <activity
+            android:name=".SnapTips"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DisplayTourMode"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CameraTutorMode"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainTourMode"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HistoryUI"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CameraUI"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DisplayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CropperActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LearnMoreTips"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Terms"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Information"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Manual"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TermsAndCondition"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity2"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

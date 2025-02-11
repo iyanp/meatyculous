@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraTutorMode">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_gray"
+        android:elevation="2dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </FrameLayout>
+
+    <!--Center Frame for information-->
+
+    <SeekBar
+        android:id="@+id/zoomSeekBarTutor"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_margin="5dp"
+        android:max="100"
+        android:progress="0"
+        android:background="@drawable/bodybackground"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/scanButtonTutor"
+        app:layout_constraintTop_toBottomOf="@+id/pointerTutor"
+        app:layout_constraintEnd_toStartOf="@id/zoominTutor"
+        app:layout_constraintStart_toEndOf="@+id/zoomoutTutor"
+        tools:layout_editor_absoluteX="16dp"/>
+
+    <ImageView
+        android:id="@+id/zoominTutor"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/zoomin"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/zoomSeekBarTutor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/zoomSeekBarTutor" />
+
+    <ImageView
+        android:id="@+id/zoomoutTutor"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/zoomout"
+        android:layout_marginStart="10dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/zoomSeekBarTutor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/zoomSeekBarTutor" />
+
+    <FrameLayout
+        android:id="@+id/exitTutorCam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:translationZ="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/skip_tutorr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textskip"/>
+
+            <TextView
+                android:id="@+id/textskip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip Tutorial"
+                android:textColor="@color/white"
+                android:fontFamily="@font/avenirheavy"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/centerFrame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pointerTutor"
+        app:layout_constraintEnd_toEndOf="@+id/pointerTutor"
+        app:layout_constraintStart_toStartOf="@+id/pointerTutor"
+        app:layout_constraintTop_toTopOf="@+id/pointerTutor">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tutorCam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/avenirheavy"
+                android:text="This button allows you to access gallery."
+                android:textColor="#f7f7f7"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/nextCam"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/nextCam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tutorCam">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirheavy"
+                    android:text="Next"
+                    android:textColor="#f7f7f7"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/previousCam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/nextCam">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirheavy"
+                    android:text="Previous"
+                    android:textColor="#f7f7f7"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <!--End of Center Frame for information-->
+
+
+    <ImageView
+        android:id="@+id/exitCamUiTutor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/exit_ic_camlayout"
+        android:elevation="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/flashToggleTutor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/flash_off"
+        android:layout_marginEnd="15dp"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/informationTutor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/informationTutor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/info_ic_camlayout"
+        android:layout_marginEnd="15dp"
+        android:elevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/pointerTutor"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:elevation="1dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pointer" />
+
+
+
+    <ImageView
+        android:id="@+id/galleryTutor"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="3dp"
+        android:src="@drawable/gallery_camlayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/scanButtonTutor"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/scan_camlayout"
+        android:elevation="1dp"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/flipCameraTutor"
+        app:layout_constraintStart_toEndOf="@+id/galleryTutor" />
+
+    <ImageView
+        android:id="@+id/flipCameraTutor"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="231dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/flip"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

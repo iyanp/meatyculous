@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#CE5F7D"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/dialogTitleDfd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="DFD (Dark, Firm, Dry)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/codecprobold"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="4dp"
+        android:lineSpacingMultiplier="1.2"
+        app:layout_constraintBottom_toTopOf="@+id/apperanceDfd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apperanceDfd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apperance:"
+        android:fontFamily="@font/codecprobold"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/dialogMessageDfd"
+        app:layout_constraintStart_toStartOf="@+id/dialogTitleDfd"
+        app:layout_constraintTop_toBottomOf="@+id/dialogTitleDfd" />
+
+    <!--Nasa backend-->
+    <TextView
+        android:id="@+id/dialogMessageDfd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark purplish-red, very firm, and dry."
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/codecprobold"
+        android:lineSpacingExtra="4dp"
+        android:lineSpacingMultiplier="1.2"
+        android:justificationMode="inter_word"
+        app:layout_constraintBottom_toTopOf="@+id/qualityDfd"
+        app:layout_constraintStart_toStartOf="@+id/apperanceDfd"
+        app:layout_constraintTop_toBottomOf="@+id/apperanceDfd" />
+
+    <TextView
+        android:id="@+id/qualityDfd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quality:"
+        android:textSize="18dp"
+        android:fontFamily="@font/codecprobold"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/dialogMessageDfd"
+        app:layout_constraintBottom_toTopOf="@+id/dialogMessage2Dfd"
+        app:layout_constraintStart_toStartOf="@+id/dialogMessageDfd" />
+
+    <!--Nasa backend-->
+    <TextView
+        android:id="@+id/dialogMessage2Dfd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High water-holding capacity, often with a sticky surface."
+        android:textSize="18dp"
+        android:fontFamily="@font/codecprobold"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="4dp"
+        android:lineSpacingMultiplier="1.2"
+        android:justificationMode="inter_word"
+        app:layout_constraintBottom_toTopOf="@+id/cookedOutcomeDfd"
+        app:layout_constraintStart_toStartOf="@+id/dialogMessageDfd"
+        app:layout_constraintTop_toBottomOf="@+id/qualityDfd" />
+
+    <TextView
+        android:id="@+id/cookedOutcomeDfd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Cooked Outcome:"
+        android:textSize="18dp"
+        android:fontFamily="@font/codecprobold"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dialogMessage3Dfd"
+        app:layout_constraintStart_toStartOf="@+id/dialogMessage2Dfd"
+        app:layout_constraintTop_toBottomOf="@+id/dialogMessage2Dfd" />
+    <!--Nasa backend-->
+    <TextView
+        android:id="@+id/dialogMessage3Dfd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flavorful and tender, ideal for long cooking methods."
+        android:textSize="18dp"
+        android:fontFamily="@font/codecprobold"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="4dp"
+        android:lineSpacingMultiplier="1.2"
+        android:justificationMode="inter_word"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cookedOutcomeDfd"
+        app:layout_constraintTop_toBottomOf="@+id/cookedOutcomeDfd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

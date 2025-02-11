@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ucrop_color_toolbar">#CE5F7D</color>
+    <color name="ucrop_color_statusbar">#CE5F7D</color>
+    <color name="ucrop_color_bg">#F9F1F0</color>
+    <color name="transparent_gray">#BF000000</color>
+
+</resources>

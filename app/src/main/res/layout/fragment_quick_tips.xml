@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp">
+
+
+    <TextView
+        android:id="@+id/textone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/codecprobold"
+        android:paddingTop="10dp"
+        android:text="1. Make sure that the meat fill the pointer."
+        android:textColor="#CE5F7D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rightImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/rightcapture"
+        app:layout_constraintEnd_toStartOf="@+id/checkImage"
+        app:layout_constraintStart_toStartOf="@+id/textone"
+        app:layout_constraintTop_toBottomOf="@+id/textone" />
+
+    <ImageView
+        android:id="@+id/checkImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/correct"
+        app:layout_constraintBottom_toBottomOf="@+id/rightImage"
+        app:layout_constraintEnd_toEndOf="@+id/textone"
+        app:layout_constraintTop_toTopOf="@+id/rightImage" />
+
+    <TextView
+        android:id="@+id/texttwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/codecprobold"
+        android:paddingTop="10dp"
+        android:text="2. Don't include pork fats, bones and any other aside from pork meat. And don't take blurry photos and photos covered by shadow, Tap the screen to focus."
+        android:textColor="#CE5F7D"
+        android:lineSpacingExtra="4dp"
+        android:lineSpacingMultiplier="1.2"
+        android:justificationMode="inter_word"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rightImage" />
+
+
+    <FrameLayout
+        android:id="@+id/wrongPhotos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/wrongIconImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texttwo">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/wrongImage"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:src="@drawable/wrongcapture"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/wrongImage2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/wrongImage2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:src="@drawable/blurred"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/wrongImage3"
+                app:layout_constraintStart_toEndOf="@+id/wrongImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/wrongImage3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:src="@drawable/shadowed"
+                app:layout_constraintStart_toEndOf="@id/wrongImage2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/wrongIconImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/wrong"
+        app:layout_constraintBottom_toBottomOf="@+id/wrongPhotos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texttwo" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

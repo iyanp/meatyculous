@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanActivity">
+
+    <FrameLayout
+        android:id="@+id/headerFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/resultHeader"
+                android:layout_width="378dp"
+                android:layout_height="47dp"
+                android:fontFamily="@font/avenirheavy"
+                android:text="Scan Photo"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#CE5F7D"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bodybackground"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerFrame">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/displayPic"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/reminder_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirheavy"
+                android:text="Make sure you've followed the right instruction from the manual."
+                android:textSize="17dp"
+                android:textColor="#CE5F7D"
+                android:textAlignment="center"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                app:layout_constraintBottom_toTopOf="@id/viewInstruction"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/displayPic" />
+
+            <TextView
+                android:id="@+id/viewInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Instruction"
+                android:onClick="viewReminders"
+                android:textSize="16dp"
+                android:background="@drawable/framebg"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/avenirheavy"
+                app:layout_constraintBottom_toTopOf="@+id/again"
+                app:layout_constraintTop_toBottomOf="@id/reminder_text"
+                app:layout_constraintEnd_toEndOf="@+id/reminder_text"
+                app:layout_constraintStart_toStartOf="@+id/reminder_text" />
+
+
+            <ImageView
+                android:id="@+id/again"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:src="@drawable/again"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/displayPic"
+                app:layout_constraintTop_toBottomOf="@+id/reminder_text" />
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="75dp"
+                android:layout_height="65dp"
+                android:src="@drawable/checkgo"
+                app:layout_constraintBottom_toBottomOf="@+id/again"
+                app:layout_constraintEnd_toEndOf="@+id/displayPic"
+                app:layout_constraintTop_toTopOf="@+id/again" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:progressDrawable="@drawable/custom_progress"
+                android:visibility="invisible"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                style="?android:attr/progressBarStyleHorizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/again"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/again" />
+
+            <TextView
+                android:id="@+id/loadingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirheavy"
+                android:text="Loading"
+                android:textAlignment="center"
+                android:textColor="#CE5F7D"
+                android:textSize="20dp"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

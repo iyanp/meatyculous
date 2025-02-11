@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/resulttextbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/timestamp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirmed"
+                    android:text="Timestamp"
+                    android:textSize="16dp"
+                    android:textColor="#f6eef4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+                <ImageView
+                    android:id="@+id/imageUri"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/timestamp"/>
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/avenirheavy"
+                    android:text="pse"
+                    android:textColor="#f6eef4"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageUri"
+                    app:layout_constraintStart_toStartOf="@+id/imageUri"
+                    app:layout_constraintTop_toBottomOf="@+id/imageUri" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/avenirmed"
+                    android:text="Quality Description:"
+                    android:textColor="#f6eef4"
+                    app:layout_constraintEnd_toEndOf="@+id/text1"
+                    app:layout_constraintStart_toStartOf="@+id/text1"
+                    app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/avenirmed"
+                    android:text="Color:"
+                    android:textColor="#f6eef4"
+                    app:layout_constraintBottom_toTopOf="@+id/colorFrame"
+                    app:layout_constraintEnd_toEndOf="@+id/colorFrame"
+                    app:layout_constraintStart_toStartOf="@+id/colorFrame"
+                    app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/avenirmed"
+                    android:text="Texture:"
+                    android:textColor="#f6eef4"
+                    app:layout_constraintEnd_toEndOf="@+id/textureText"
+                    app:layout_constraintStart_toStartOf="@+id/textureText"
+                    app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+                <FrameLayout
+                    android:id="@+id/colorFrame"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:background="#bc5f54"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/text5"
+                    app:layout_constraintEnd_toStartOf="@+id/textureText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+                <TextView
+                    android:id="@+id/textureText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirheavy"
+                    android:text="TEXTURE"
+                    android:textColor="#f6eef4"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/colorFrame"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/colorFrame"
+                    app:layout_constraintTop_toTopOf="@+id/colorFrame" />
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/avenirmed"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="Water Holding"
+                    android:textColor="#f6eef4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/colorFrame" />
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/avenirmed"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="Cause"
+                    android:textColor="#f6eef4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text5" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/detectedColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Detected Color"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:background="@drawable/delete_ic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descrip" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

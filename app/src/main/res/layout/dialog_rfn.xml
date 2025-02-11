@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#CE5F7D"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/dialogTitleRfn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="RFN (Reddish, Firm, Non-exudative)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/codecprobold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/apperanceRfn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apperanceRfn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apperance:"
+        android:fontFamily="@font/codecprobold"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="4dp"
+        android:lineSpacingMultiplier="1.2"
+        app:layout_constraintBottom_toTopOf="@+id/dialogMessageRfn"
+        app:layout_constraintStart_toStartOf="@+id/dialogTitleRfn"
+        app:layout_constraintTop_toBottomOf="@+id/dialogTitleRfn" />
+
+    <!--Nasa backend-->
+    <TextView
+        android:id="@+id/dialogMessageRfn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reddish-pink, firm, and retains moisture well or non-exudative."
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/codecprobold"
+        android:lineSpacingExtra="4dp"
+        android:lineSpacingMultiplier="1.2"
+        android:justificationMode="inter_word"
+        app:layout_constraintBottom_toTopOf="@+id/qualityRfn"
+        app:layout_constraintStart_toStartOf="@+id/apperanceRfn"
+        app:layout_constraintTop_toBottomOf="@+id/apperanceRfn" />
+
+    <TextView
+        android:id="@+id/qualityRfn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quality:"
+        android:textSize="18dp"
+        android:fontFamily="@font/codecprobold"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/dialogMessageRfn"
+        app:layout_constraintBottom_toTopOf="@+id/dialogMessage2Rfn"
+        app:layout_constraintStart_toStartOf="@+id/dialogMessageRfn" />
+
+    <!--Nasa backend-->
+    <TextView
+        android:id="@+id/dialogMessage2Rfn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ideal. Firm texture with balanced water retention, making it the preferred quality."
+        android:textSize="18dp"
+        android:fontFamily="@font/codecprobold"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="4dp"
+        android:lineSpacingMultiplier="1.2"
+        android:justificationMode="inter_word"
+        app:layout_constraintBottom_toTopOf="@+id/cookedOutcomeRfn"
+        app:layout_constraintStart_toStartOf="@+id/dialogMessageRfn"
+        app:layout_constraintTop_toBottomOf="@+id/qualityRfn" />
+
+    <TextView
+        android:id="@+id/cookedOutcomeRfn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Cooked Outcome:"
+        android:textSize="18dp"
+        android:fontFamily="@font/codecprobold"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dialogMessage3Rfn"
+        app:layout_constraintStart_toStartOf="@+id/dialogMessage2Rfn"
+        app:layout_constraintTop_toBottomOf="@+id/dialogMessage2Rfn" />
+    <!--Nasa backend-->
+    <TextView
+        android:id="@+id/dialogMessage3Rfn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prone to spoilage but offers a good balance between tenderness and flavor."
+        android:textSize="18dp"
+        android:fontFamily="@font/codecprobold"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="4dp"
+        android:lineSpacingMultiplier="1.2"
+        android:justificationMode="inter_word"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cookedOutcomeRfn"
+        app:layout_constraintTop_toBottomOf="@+id/cookedOutcomeRfn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

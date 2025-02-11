@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg2"
+    tools:context=".Information">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingStart="20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/userManual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="About"
+                android:textColor="#CE5F7D"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/titleContentFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/framebg"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/userManual"
+                app:layout_constraintStart_toStartOf="@id/userManual"
+                app:layout_constraintTop_toBottomOf="@id/userManual">
+
+                <TextView
+                    android:id="@+id/titleContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirmed"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="4dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:padding="10dp"
+                    android:text="Welcome to Meatyculous, an Android application designed to accurately classifies pork meat quality, ensuring you always choose the best cuts for your needs.
+Meatyculous is an Android-based mobile application designed to classify pork meat quality through color segmentation using CIELAB color space. This application was designed to provide a fast, accurate, and reliable tool to assess meat quality, benefiting consumers, meat inspectors, and retailers. It classifies the pork meat quality based on industry standards: PSE (Pale, Soft, Exudative), RFN (Red, Firm, Non-exudative), and DFD (Dark, Firm, Dry). Meatyculous ensures consistent and objective evaluations to improve food safety, reduce waste, and enhance consumer satisfaction.
+"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/how_textoneFrame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/framebg"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleContentFrame">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/how_textone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/framebgtext"
+                        android:fontFamily="@font/roboto"
+                        android:padding="10dp"
+                        android:text="System Requirements"
+                        android:textColor="#CE5F7D"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/how_one"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirheavy"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Minimum"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/how_textone" />
+
+                    <TextView
+                        android:id="@+id/texta1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Operating System: Android 10.0 or higher"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/how_one" />
+
+                    <TextView
+                        android:id="@+id/texta2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Processor: Octa-core 1.8 GHz"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/texta1" />
+
+                    <TextView
+                        android:id="@+id/texta3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Camera: Rear-facing camera with resolution of at least 30 MP for image capture"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/texta2" />
+
+                    <TextView
+                        android:id="@+id/texta3a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Upload Image Resolution: 2448x3264 pixels."
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/texta3" />
+
+                    <TextView
+                        android:id="@+id/texta4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="RAM: 3GB or more"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/texta3a" />
+
+                    <TextView
+                        android:id="@+id/texta5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirheavy"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Storage: 4GB of free internal storage"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/texta4" />
+
+                    <TextView
+                        android:id="@+id/recom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirheavy"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Recommended :"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/texta5" />
+
+                    <TextView
+                        android:id="@+id/texta6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Operating System: Android 10.0 or higher"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/recom" />
+
+                    <TextView
+                        android:id="@+id/texta7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Processor:  Octa-core 2.3GHz"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/texta6" />
+
+                    <TextView
+                        android:id="@+id/texta8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Camera: Rear-facing camera with resolution of at least 50 MP for image capture"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/texta7" />
+
+                    <TextView
+                        android:id="@+id/texta8a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Upload Image Resolution: 3120x4160 pixels"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/texta8" />
+
+                    <TextView
+                        android:id="@+id/texta9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="RAM: 8GB or more"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/texta8a" />
+
+                    <TextView
+                        android:id="@+id/texta10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Storage: 64 GB of free internal storage"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/texta9" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/developersFrame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/framebg"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/how_textoneFrame">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/dev_textone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/framebgtext"
+                        android:fontFamily="@font/roboto"
+                        android:padding="10dp"
+                        android:text="Developers"
+                        android:textColor="#CE5F7D"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <FrameLayout
+                        android:id="@+id/developerProfiles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/dev_textone">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/cathImg"
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/cath"
+                                app:layout_constraintEnd_toStartOf="@id/princeImg"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/princeImg"
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/prince"
+                                app:layout_constraintEnd_toStartOf="@id/pearlynImg"
+                                app:layout_constraintStart_toEndOf="@id/cathImg"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/pearlynImg"
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/perlyan"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/princeImg"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                            <TextView
+                                android:id="@+id/cathName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/avenirheavy"
+                                android:justificationMode="inter_word"
+                                android:lineSpacingExtra="4dp"
+                                android:lineSpacingMultiplier="1.2"
+                                android:text="Catherine\nEstrella"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="13dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/cathImg"
+                                app:layout_constraintStart_toStartOf="@+id/cathImg"
+                                app:layout_constraintTop_toBottomOf="@id/cathImg" />
+
+                            <TextView
+                                android:id="@+id/princeName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/avenirheavy"
+                                android:text="Prince\nMatimat"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="13dp"
+                                android:justificationMode="inter_word"
+                                android:lineSpacingExtra="4dp"
+                                android:lineSpacingMultiplier="1.2"
+                                app:layout_constraintEnd_toEndOf="@+id/princeImg"
+                                app:layout_constraintStart_toStartOf="@+id/princeImg"
+                                app:layout_constraintTop_toBottomOf="@id/princeImg" />
+
+                            <TextView
+                                android:id="@+id/pearlName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/avenirheavy"
+                                android:text="Pearlyn\nMoises"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="13dp"
+                                android:justificationMode="inter_word"
+                                android:lineSpacingExtra="4dp"
+                                android:lineSpacingMultiplier="1.2"
+                                app:layout_constraintEnd_toEndOf="@+id/pearlynImg"
+                                app:layout_constraintStart_toStartOf="@+id/pearlynImg"
+                                app:layout_constraintTop_toBottomOf="@id/pearlynImg" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/developersContent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="The Meatyculous application designed to accurately classifies pork meat quality, ensuring you always choose the best cuts for your needs. It is a tool created and designed by BSIT students from SLSU Lucban Quezon, to help meat inspectors, retailers, and consumers efficiently and accurately classify the quality of pork meat based on its color."
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/developerProfiles" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/acknowledgment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/framebg"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/developersFrame">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/acknowledgmentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/framebgtext"
+                        android:fontFamily="@font/roboto"
+                        android:padding="10dp"
+                        android:text="Acknowledgments"
+                        android:textColor="#CE5F7D"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/finalText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenirmed"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:padding="10dp"
+                        android:text="Meatyculous follows industry standards such as PNS/BAFS 326:2022, Japanese Pork Color Standards (JPCS), and National Pork Producers Council North American Pork Quality Standards (NPPC) to ensure reliable classifications."
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/acknowledgmentText" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

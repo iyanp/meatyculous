@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+
+    <TextView
+        android:id="@+id/textone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/codecprobold"
+        android:paddingTop="10dp"
+        android:text="What to Capture?."
+        android:textColor="#CE5F7D"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/rightCapturePhoto"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:src="@drawable/righttocapture"
+                app:layout_constraintEnd_toStartOf="@+id/wrongCapturePhoto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/wrongCapturePhoto"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:src="@drawable/wrongtocapture"
+                app:layout_constraintStart_toEndOf="@+id/rightCapturePhoto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/what"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/codecprobold"
+                android:paddingTop="10dp"
+                android:text="Pork Meat parts only."
+                android:textColor="#CE5F7D"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/rightCapturePhoto"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rightCapturePhoto" />
+
+            <TextView
+                android:id="@+id/whatnot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/codecprobold"
+                android:paddingTop="10dp"
+                android:text="Beef, chicken, fish and any other aside from pork"
+                android:textColor="#CE5F7D"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:lineSpacingExtra="4dp"
+                android:padding="5dp"
+                android:lineSpacingMultiplier="1.2"
+                app:layout_constraintEnd_toEndOf="@id/wrongCapturePhoto"
+                app:layout_constraintStart_toStartOf="@+id/wrongCapturePhoto"
+                app:layout_constraintTop_toBottomOf="@+id/wrongCapturePhoto" />
+
+            <ImageView
+                android:id="@+id/checkImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/correct"
+                app:layout_constraintBottom_toBottomOf="@+id/wrongImage"
+                app:layout_constraintEnd_toEndOf="@+id/what"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whatnot" />
+
+            <ImageView
+                android:id="@+id/wrongImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/wrong"
+                app:layout_constraintEnd_toEndOf="@+id/wrongCapturePhoto"
+                app:layout_constraintStart_toStartOf="@+id/wrongCapturePhoto"
+                app:layout_constraintTop_toBottomOf="@id/whatnot"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
