@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/avenirlight"
-        android:text="“Ensuring quality, One piece at a time.”"
+        android:text="“Ensuring quality, one piece at a time.”"
         android:textColor="@color/black"
         android:textSize="17dp"
         android:visibility="gone"

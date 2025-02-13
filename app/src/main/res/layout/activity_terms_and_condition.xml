@@ -542,7 +542,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="I Accept"
+                    android:text="Accept"
                     android:textSize="20sp"
                     android:paddingEnd="20dp"
                     android:fontFamily="@font/avenirmed"

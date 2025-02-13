@@ -50,10 +50,6 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseHelper databaseHelper;
 
 
-    //for logging remove in final debug
-    private Button logcontent;
-
-
     //exit confirmation
     private void showExitConfirmationDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -110,21 +106,6 @@ public class MainActivity extends AppCompatActivity {
         imageView = findViewById(R.id.pork_parts);
         history = findViewById(R.id.history_icon);
 
-
-        //for logging remove soon
-        logcontent = findViewById(R.id.logbut);
-
-        logcontent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                databaseHelper.logTableContents("PSE");
-                databaseHelper.logTableContents("RFN");
-                databaseHelper.logTableContents("DFD");
-
-
-            }
-        });
-        //end of logging
 
 
         //for viewing the pork parts image//button history
@@ -276,7 +257,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
 
     //pop up functionality
@@ -322,14 +302,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private static double calculateStandardDeviation(double[] values, double mean) {
-        double sum = 0;
-        for (double value : values) {
-            sum += Math.pow(value - mean, 2);
-        }
-        return Math.sqrt(sum / values.length);
-    }
-
     //request permissions
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -371,8 +343,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-
         }
-
     }
 }

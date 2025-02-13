@@ -976,7 +976,7 @@
             android:lineSpacingMultiplier="1.2"
             android:padding="10dp"
             android:layout_marginTop="15dp"
-            android:text='estrellacatherine07@gmail.com , pmmatimat2021@gmail.com , moisespearlyn@gmail.com'
+            android:text="estrellacatherine07@gmail.com\npmmatimat2021@gmail.com\nmoisespearlyn@gmail.com"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/emailIc"
             app:layout_constraintEnd_toEndOf="parent"
@@ -998,7 +998,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/avenirmed"
-            android:text=' 09305232404 , 09628190496 , 09602654686'
+            android:text='09305232404\n09628190496\n09602654686'
             android:textColor="@color/black"
             android:lineSpacingExtra="4dp"
             android:lineSpacingMultiplier="1.2"
@@ -1017,6 +1017,7 @@
             android:lineSpacingExtra="4dp"
             android:lineSpacingMultiplier="1.2"
             android:padding="10dp"
+            android:layout_marginTop="5dp"
             android:text='Thank you for using Meatyculous! We hope this app helps you ensure the quality of your pork meat.'
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"

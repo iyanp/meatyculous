@@ -40,7 +40,7 @@ public class DisplayTourMode extends AppCompatActivity {
 
     private void skiptutorialmodeconfirmation() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Are you sure you want to Skip this Tutorial")
+        builder.setMessage("Are you sure you want to skip this tutorial")
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
