@@ -262,7 +262,7 @@ public class DisplayActivity extends AppCompatActivity {
 
         }else if (colorTextView.getText().toString().equals("RFN")){
             porkindicator.setVisibility(View.VISIBLE);
-            colorTextView.setText("RFN (Red, FIRM, non-exudative)");
+            colorTextView.setText("RFN (Red, Firm, non-exudative)");
             description =
                     "Appearance: Ideal reddish-pink color.<br><br>" +
                     "Texture: Firm and elastic to the touch.<br><br>" +
