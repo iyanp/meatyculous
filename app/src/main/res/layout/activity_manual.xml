@@ -289,7 +289,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text='2.	Gallery: Select an existing photo of pork meat from your photo library'
+                android:text='2.	Gallery: Select an existing photo of pork meat from your photo library.'
                 android:fontFamily="@font/avenirmed"
                 android:textColor="@color/black"
                 android:justificationMode="inter_word"
@@ -300,7 +300,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text='3.	Information: Learn more about pork meat quality conditions indicators and the science behind the app'
+                android:text='3.	About: Learn more about the Meatyculous application and the minimum and recommended system requirements.'
+
                 android:fontFamily="@font/avenirmed"
                 android:textColor="@color/black"
                 android:justificationMode="inter_word"
@@ -311,12 +312,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text='4.	User Manual: Access this instructional manual directly within the app for guidance'
+                android:text='4.	User Manual: Access this instructional manual directly within the app for guidance.'
                 android:fontFamily="@font/avenirmed"
                 android:textColor="@color/black"
                 android:justificationMode="inter_word"
                 android:lineSpacingExtra="4dp"
                 android:lineSpacingMultiplier="1.2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text='5.	History: View the saved results.'
+                android:fontFamily="@font/avenirmed"
+                android:textColor="@color/black"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"/>
+
+
 
 
         </LinearLayout>
@@ -760,7 +774,7 @@
                         android:id="@+id/pseText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/avenirlight"
+                        android:fontFamily="@font/avenirheavy"
                         android:text="Pale, Soft, and Exudative (PSE)"
                         android:textAlignment="center"
                         android:textColor="@color/white"
@@ -799,7 +813,7 @@
                         android:id="@+id/rfnText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/avenirlight"
+                        android:fontFamily="@font/avenirheavy"
                         android:text="Red, firm, and non-exudative (RFN)"
                         android:textAlignment="center"
                         android:textColor="@color/white"
@@ -836,7 +850,7 @@
                         android:id="@+id/dfdText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/avenirlight"
+                        android:fontFamily="@font/avenirheavy"
                         android:text="Dark, firm, and dry (DFD)"
                         android:textAlignment="center"
                         android:textColor="@color/white"
@@ -1017,7 +1031,7 @@
             android:lineSpacingExtra="4dp"
             android:lineSpacingMultiplier="1.2"
             android:padding="10dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:text='Thank you for using Meatyculous! We hope this app helps you ensure the quality of your pork meat.'
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"

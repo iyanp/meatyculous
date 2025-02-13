@@ -288,33 +288,6 @@ public class ScanActivity extends AppCompatActivity {
             double percentageRed = (double) totalRed / totalPixels * 100;
             double percentageNonRed = (double) totalNonRed / totalPixels * 100;
 
-            /** for debugging purposes **/
-            /**
-             double avgB = totalB / totalPixels; //variable pang debug
-            double percentageDark = (double) totalDarkPixels / totalPixels * 100;
-            double percentageLight = (double) totalLightPixels / totalPixels * 100;
-            double percentageGreen = (double) totalGreen /totalPixels * 100;
-            double percentageYellow = (double) totalYellow / totalPixels * 100;
-            double percentageBlue = (double) totalBlue / totalPixels * 100;
-            **/
-            /** for debugging purposes **/
-
-            //for testing only remove all logs in finishing app
-            /**
-            Log.d("MeatQualityAnalyzer", "Average L*: " + avgL);
-            Log.d("MeatQualityAnalyzer", "Average a*: " + avgA);
-            Log.d("MeatQualityAnalyzer", "Average b*: " + avgB);
-            Log.d("PercentageAnalyzer", "Percentage of Darkness: " + percentageDark);
-            Log.d("PercentageAnalyzer", "Percentage of Lightness: " + percentageLight);
-            Log.d("PercentageAnalyzer", "Percentage of Redness: " + percentageRed);
-            Log.d("PercentageAnalyzer", "Percentage of NonRed: " + percentageNonRed);
-            Log.d("MeatQualityAnalyzer", "Total Green Pixels: " + percentageGreen);
-            Log.d("MeatQualityAnalyzer", "Total Yellow Pixels: " + percentageYellow);
-            Log.d("MeatQualityAnalyzer", "Total Blue Pixels: " + percentageBlue);
-            Log.d("MeatQualityAnalyzer", "Average L* IN INT: " + avgLight);
-             **/
-
-
             String qualityCategory = "";
 
             //try catch here:

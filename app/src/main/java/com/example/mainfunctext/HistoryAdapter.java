@@ -195,9 +195,6 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         return groupedMap;
     }
 
-
-
-
     @Override
     public int getItemCount() {
         return historyItems.size();
@@ -291,8 +288,4 @@ public class HistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             }
         }
     }
-
-    //refresh data
-
-
 }

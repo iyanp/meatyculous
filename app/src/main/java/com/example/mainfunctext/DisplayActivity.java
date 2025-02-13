@@ -251,7 +251,7 @@ public class DisplayActivity extends AppCompatActivity {
         //pork quality
         if (colorTextView.getText().toString().equals("PSE")){
             porkindicator.setVisibility(View.VISIBLE);
-            colorTextView.setText("PSE (Pale, pinkish gray, Soft and Exudative");
+            colorTextView.setText("PSE (Pale, pinkish gray, Soft and Exudative)");
             description =
                     "Appearance: The meat is pale in color.<br><br>" +
                     "Texture: Soft and Mushy.<br><br>" +
@@ -262,7 +262,7 @@ public class DisplayActivity extends AppCompatActivity {
 
         }else if (colorTextView.getText().toString().equals("RFN")){
             porkindicator.setVisibility(View.VISIBLE);
-            colorTextView.setText("RFN (Red, FIRM, non-exudative");
+            colorTextView.setText("RFN (Red, FIRM, non-exudative)");
             description =
                     "Appearance: Ideal reddish-pink color.<br><br>" +
                     "Texture: Firm and elastic to the touch.<br><br>" +
